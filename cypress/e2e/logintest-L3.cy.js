@@ -6,6 +6,9 @@ describe("login test",()=>{
         cy.visit ("https://www.edu.goit.global/ro/account/login")
         cy.get("div[class='next-10stgr7 e1jenigf0'] > h2[class='next-c1vj7d e168p23h3']").should("be.visible")
         cy.get("div[class='next-10stgr7 e1jenigf0'] > h2[class='next-c1vj7d e168p23h3']").should("be.have.text","Autentificare")
+        cy.get("#user_email").should("be.visible")
+        cy.get("#user_password").should("be.visible")
+        cy.get("button[type='submit']").should("be.visible")
         });
     });
     
