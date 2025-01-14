@@ -1,4 +1,4 @@
-import LoginPage from "../pages/Loginpage";
+import LoginPage from "../pages/Loginpage.js";
 
 describe("login test",()=>{
 
@@ -11,9 +11,8 @@ describe("login test",()=>{
         login.VerifyLoginPage()
         login.VerifyPassowrdField()
         login.VerifySubmitButtin()
-        
-
-
+        login.inputEmail("email@email.com")
+       
       
         });
     });
