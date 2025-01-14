@@ -1,4 +1,4 @@
-import Login from "../pages/Login";
+import Login from "../pages/Login.js";
 
 describe("login test",()=>{
 
@@ -13,6 +13,7 @@ describe("login test",()=>{
         login.VerifySubmitButtin();
         login.inputEmail("user888@gmail.com");
         login.inputPassword("1234567890");
+        login.submitbutton.click()
              
         });
     });
