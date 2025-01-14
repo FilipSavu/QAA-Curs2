@@ -19,10 +19,10 @@ VerifyEmailField(){
     cy.get(this.emailfield).should("be.visible");
 }
 inputEmail(email){
-    cy.get(this.emailfield).type(email)
+    cy.get(this.emailfield).type(email);
 }
 inputPassword(password){
-    cy.get(this.passwordfield).type(password)
+    cy.get(this.userpassword).type(password);
 }
 VerifyPassowrdField(){
     cy.get(this.userpassword).should("be.visible");
