@@ -30,9 +30,8 @@ VerifyPassowrdField(){
 VerifySubmitButtin(){
     cy.get(this.submitbutton).should("be.visible");
 }
-clickbutton(submit){
-cy.get("button[type="submit"]").click();
-}
+clickLoginButton(){
+    cy.get(this.submitbutton).click();
 
 }
 
