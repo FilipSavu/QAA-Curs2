@@ -34,5 +34,5 @@ clickLoginButton(){
     cy.get(this.submitbutton).click();
 
 }
-
+}
 export default Login;
