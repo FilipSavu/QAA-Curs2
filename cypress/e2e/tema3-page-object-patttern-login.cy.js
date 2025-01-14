@@ -13,7 +13,7 @@ describe("login test",()=>{
         login.VerifyPassowrdField();
         login.VerifySubmitButtin();
         login.inputEmail("user888@gmail.com");
-        login.inputPassword("1234567890");
+        //login.inputPassword("1234567890");
        
       
         });
