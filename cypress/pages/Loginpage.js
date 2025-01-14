@@ -2,6 +2,7 @@ class LoginPage{
 
     constructor(){
      this.emailfield="#user_email"
+     this.logintitle="".next-10stgr7 > .next-c1vj7d ""
 
     }
 
@@ -11,8 +12,8 @@ NavigateToLoginPage(){
 }
 
 VerifyLoginPage(){
-    cy.get(".next-10stgr7 > .next-c1vj7d ").should("be.visible");
-    cy.get(".next-10stgr7 > .next-c1vj7d ").should("have.text","Login");
+    cy.get(this.logintitle).should("be.visible");
+    cy.get(this.logintitle).should("have.text","Login");
 }
 
 
