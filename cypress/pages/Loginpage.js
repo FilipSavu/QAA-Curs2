@@ -2,7 +2,9 @@ class LoginPage{
 
     constructor(){
      this.emailfield="#user_email"
-     this.logintitle="".next-10stgr7 > .next-c1vj7d ""
+     this.logintitle=".next-10stgr7 > .next-c1vj7d "
+     this.userpassword="#user_password"
+     this.submitbutton="button[type='submit']"
 
     }
 
@@ -28,11 +30,11 @@ inputEmail(email){
 }
 
 VerifyPassowrdField(){
-    cy.get("#user_password").should("be.visible");
+    cy.get(this.userpassword).should("be.visible");
 }
 
 VerifySubmitButtin(){
-    cy.get("button[type='submit']").should("be.visible");
+    cy.get(this.submitbutton).should("be.visible");
 }
 
 
