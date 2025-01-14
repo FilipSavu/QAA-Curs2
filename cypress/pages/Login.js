@@ -21,6 +21,9 @@ VerifyEmailField(){
 inputEmail(email){
     cy.get(this.emailfield).type(email)
 }
+inputPassword(password){
+    cy.get(this.passwordfield).type(password)
+}
 VerifyPassowrdField(){
     cy.get(this.userpassword).should("be.visible");
 }
