@@ -38,7 +38,13 @@ clickLoginButton(){
 VerifyHamburgerMenu(){
     cy.get(this.burgerbutton).should("be.visible")
 }
+clickHamburgerMenu(){
+    cy.get(this.burgerbutton).click();
+}
 
+verifyLogoutbutton(){
+    cy.get(this.logoutbutton).should("have.text","Deconectează-te").should("be.visible");
+}
 clickLogoutbutton(){
     cy.get(this.logoutbutton).should("have.text","Deconectează-te").click();
 }
