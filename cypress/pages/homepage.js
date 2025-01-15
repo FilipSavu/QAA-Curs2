@@ -6,7 +6,7 @@ class Homepage{
      this.userpassword="#user_password"
      this.submitbutton="button[type='submit']"
      this.burgerbutton="[data-test-id='CircularProgressbarWithChildren__children']"
-     this.logoutbutton="button[type='.next-bve2vl']"
+     this.logoutbutton=".next-bve2vl"
     }
 
 NavigateToLoginPage(){
@@ -40,7 +40,7 @@ VerifyHamburgerMenu(){
 }
 
 clickLogoutbutton(){
-    cy.get(this.clickLogoutbutton).should('contain', 'Deconectează-te').click();
+    cy.get(this.clickLogoutbutton).should("have.text","Deconectează-te").click();
 }
 
 }
