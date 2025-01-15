@@ -6,6 +6,7 @@ class Homepage{
      this.userpassword="#user_password"
      this.submitbutton="button[type='submit']"
      this.burgerbutton="[data-test-id='CircularProgressbarWithChildren__children']"
+     this.logoutbutton="button[type='.next-bve2vl']"
     }
 
 NavigateToLoginPage(){
@@ -35,11 +36,11 @@ clickLoginButton(){
     cy.get(this.submitbutton).click();
 }
 VerifyHamburgerMenu(){
-cy.get(this.burgerbutton).should("be.visible")
+    cy.get(this.burgerbutton).should("be.visible")
 }
 
 clickLogoutbutton(){
-    cy.get('button').should('contain', 'Deconectează-te').click();
+    cy.get(this.clickLogoutbutton).should('contain', 'Deconectează-te').click();
 }
 
 }
