@@ -1,13 +1,12 @@
 import Homepage from "../pages/homepage";
-import Homepage from "../pages/homepage";
 
 describe("login test",()=>{
 
     it("visit goit login page", ()=>{
       
-        const Homepage=new Homepage ()
+        const homepage = new Homepage(); // Creează o instanță a clasei Homepage
 
-        login.NavigateToLoginPage();
+        homepage.NavigateToLoginPage(); // Apelează metodele folosind instanța 'homepage'
         login.VerifyEmailField();
         login.VerifyLoginPage();
         login.VerifyPassowrdField();
