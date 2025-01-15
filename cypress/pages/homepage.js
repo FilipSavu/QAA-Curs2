@@ -6,7 +6,7 @@ class Homepage{
      this.userpassword="#user_password"
      this.submitbutton="button[type='submit']"
      this.burgerbutton="[data-test-id='CircularProgressbarWithChildren__children']"
-     this.logoutbutton ="button.next-bve2vl.e1phyiqy2"; // Combină clasele pentru specificitate
+     this.logoutbutton ="button.next-bve2vl.e1phyiqy2";
 
     }
 
@@ -42,8 +42,6 @@ VerifyHamburgerMenu(){
 clickHamburgerMenu(){
     cy.get(this.burgerbutton).click();
 }
-
-
 verifyLogoutbutton(){
     cy.get(this.logoutbutton).should("have.text", "Deconectează-te").should("be.visible");
     }
