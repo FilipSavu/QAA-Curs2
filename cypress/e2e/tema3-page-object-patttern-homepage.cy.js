@@ -6,7 +6,7 @@ describe("login test",()=>{
       
         const login=new Homepage ()
 
-        Homepage.NavigateToLoginPage();
+        login.NavigateToLoginPage();
 
              
         });
