@@ -4,9 +4,9 @@ describe("login test",()=>{
 
     it("visit goit login page", ()=>{
       
-        const homepage = new Homepage(); // Creează o instanță a clasei Homepage
+        const homepage = new Homepage();
 
-        login.NavigateToLoginPage(); // Apelează metodele folosind instanța 'homepage'
+        login.NavigateToLoginPage();
         login.VerifyEmailField();
         login.VerifyLoginPage();
         login.VerifyPassowrdField();
