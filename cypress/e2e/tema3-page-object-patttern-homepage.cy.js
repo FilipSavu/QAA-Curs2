@@ -14,6 +14,8 @@ describe("login test",()=>{
         login.inputEmail("testowyqa@qa.team");
         login.inputPassword("QA!automation-1");
         login.clickLoginButton();
+        login.VerifyHamburgerMenu();
+        login.clickHamburgerMenu();
         login.clickLogoutbutton();
         
         });
