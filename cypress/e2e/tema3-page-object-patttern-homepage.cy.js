@@ -6,7 +6,7 @@ describe("login test",()=>{
       
         const homepage = new Homepage(); // Creează o instanță a clasei Homepage
 
-        homepage.NavigateToLoginPage(); // Apelează metodele folosind instanța 'homepage'
+        login.NavigateToLoginPage(); // Apelează metodele folosind instanța 'homepage'
         login.VerifyEmailField();
         login.VerifyLoginPage();
         login.VerifyPassowrdField();
