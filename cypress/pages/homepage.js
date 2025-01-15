@@ -38,5 +38,9 @@ VerifyHamburgerMenu(){
 cy.get(this.burgerbutton).should("be.visible")
 }
 
+clickLogoutbutton(){
+    cy.contains('button', 'Deconectează-te').click();
+}
+
 }
 export default  Homepage;
