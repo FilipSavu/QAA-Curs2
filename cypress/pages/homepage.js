@@ -39,7 +39,7 @@ cy.get(this.burgerbutton).should("be.visible")
 }
 
 clickLogoutbutton(){
-    cy.contains('button', 'Deconectează-te').click();
+    cy.get('button').should('contain', 'Deconectează-te').click();
 }
 
 }
