@@ -11,8 +11,8 @@ describe("login test",()=>{
         login.VerifyLoginPage();
         login.VerifyPassowrdField();
         login.VerifySubmitButtin();
-        login.inputEmail("user888@gmail.com");
-        login.inputPassword("1234567890");
+        login.inputEmail("testowyqa@qa.team");
+        login.inputPassword("QA!automation-1");
         login.clickLoginButton();
              
         });
