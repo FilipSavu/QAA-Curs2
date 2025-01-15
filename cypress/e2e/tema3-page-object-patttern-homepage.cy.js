@@ -1,10 +1,11 @@
 import Homepage from "../pages/homepage";
+import Homepage from "../pages/homepage";
 
 describe("login test",()=>{
 
     it("visit goit login page", ()=>{
       
-        const homepage=new Homepage ()
+        const Homepage=new Homepage ()
 
         login.NavigateToLoginPage();
         login.VerifyEmailField();
