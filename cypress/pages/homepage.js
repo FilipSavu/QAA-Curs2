@@ -5,6 +5,7 @@ class Homepage{
      this.logintitle=".next-10stgr7 > .next-c1vj7d "
      this.userpassword="#user_password"
      this.submitbutton="button[type='submit']"
+     this.burgerbutton="[data-test-id='CircularProgressbarWithChildren__children']"
     }
 
 NavigateToLoginPage(){
@@ -32,6 +33,11 @@ VerifySubmitButtin(){
 }
 clickLoginButton(){
     cy.get(this.submitbutton).click();
+
+VerifyHamburgerMenu(){
+cy.get(this.burgerbutton).should("be.visible")
+
+}
 
 }
 }
