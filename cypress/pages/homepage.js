@@ -33,12 +33,10 @@ VerifySubmitButtin(){
 }
 clickLoginButton(){
     cy.get(this.submitbutton).click();
-
+}
 VerifyHamburgerMenu(){
 cy.get(this.burgerbutton).should("be.visible")
-
 }
 
-}
 }
 export default  Homepage;
