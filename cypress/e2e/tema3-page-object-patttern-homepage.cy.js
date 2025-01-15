@@ -4,7 +4,7 @@ describe("login test",()=>{
 
     it("visit goit login page", ()=>{
       
-        const login=new Login ()
+        const homepage=new Login ()
 
         login.NavigateToLoginPage();
         login.VerifyEmailField();
