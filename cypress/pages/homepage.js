@@ -40,7 +40,7 @@ VerifyHamburgerMenu(){
 }
 
 clickLogoutbutton(){
-    cy.get(this.clickLogoutbutton).should("have.text","Deconectează-te").click();
+    cy.get(this.logoutbutton).should("have.text","Deconectează-te").click();
 }
 
 }
