@@ -6,7 +6,7 @@ class Homepage{
      this.userpassword="#user_password"
      this.submitbutton="button[type='submit']"
      this.burgerbutton="[data-test-id='CircularProgressbarWithChildren__children']"
-     this.logoutbutton=".next-bve2vl.e1phyiqy2"
+     this.logoutbutton="#__next > header > div > div > nav > div:nth-child(8) > button"
     }
 
 NavigateToLoginPage(){
