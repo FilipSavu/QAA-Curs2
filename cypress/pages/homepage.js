@@ -6,7 +6,7 @@ class Homepage{
      this.userpassword="#user_password"
      this.submitbutton="button[type='submit']"
      this.burgerbutton="[data-test-id='CircularProgressbarWithChildren__children']"
-     this.logoutbutton ="button.next-bve2vl.e1phyiqy2";
+     this.logoutbutton ="div[data-valuetext='Deconectează-te']"
 
     }
 
