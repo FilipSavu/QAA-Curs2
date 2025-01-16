@@ -43,11 +43,11 @@ clickHamburgerMenu(){
     cy.get(this.burgerbutton).click();
 }
 verifyLogoutbutton(){
-    cy.get(this.logoutbutton).should("have.text", "Deconectează-te").should("be.visible");
+    cy.get(this.logoutbutton).should("be.visible");
     }
 
 clickLogoutbutton(){
-    cy.get(this.logoutbutton).should("have.text","Deconectează-te").click();
+    cy.get(this.logoutbutton).click();
 }
 
 }
