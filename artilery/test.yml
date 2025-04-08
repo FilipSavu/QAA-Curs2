@@ -1,0 +1,30 @@
+config:
+  target: "https://httpbin.org/"
+  phases:
+    - duration: 5
+      arrivalRate: 2
+      name: "First Test"
+  plugins: 
+    ensure : {}
+  ensure :
+    thresholds: 
+      - http.response_time.p95: 500
+    conditions:
+      - expression : vusers.failed == 0 and vusers.completed == 10
+
+
+scenarios:
+  - name: "Post Resource"
+    flow:
+      - post:
+          url: "/post"
+          json:
+            username: "Filip"
+            password: "Felipe"
+          capture:
+            - json: "$.json"
+              as : "request_body"
+            - json: "$.headers.Host"
+              as : "host"
+      - log : "{{request_body}}"
+      - log : "{{host}}"

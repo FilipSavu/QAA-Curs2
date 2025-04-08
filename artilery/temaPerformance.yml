@@ -1,0 +1,31 @@
+config:
+  target: "https://reqres.in"
+  phases:
+    - duration: 60
+      arrivalRate: 5
+      rampTo: 20
+      name: "Ramp-up users from 5 to 20 over 60 seconds"
+  payload:
+    path: "payload.csv"
+    fields:
+      - name
+      - job
+  defaults:
+    headers:
+      Content-Type: "application/json"
+  ensure:
+    thresholds:
+      http.response_time.p95: 800    # max 800ms pentru 95% din răspunsuri
+      http.response_time.median: 500
+      http.request_rate: 10          # min 10 cereri/secundă
+
+scenarios:
+  - name: "User scenario with GET and POST"
+    flow:
+      - get:
+          url: "/api/users?page=2"
+      - post:
+          url: "/api/users"
+          json:
+            name: "{{ name }}"
+            job: "{{ job }}"
